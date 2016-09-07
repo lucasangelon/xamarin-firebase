@@ -11,6 +11,9 @@
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)firebase_testPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)FirebaseChat.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -18,6 +21,9 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)firebase_testPage.xaml.cs">
       <DependentUpon>firebase_testPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)FirebaseChat.xaml.cs">
+      <DependentUpon>FirebaseChat.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>

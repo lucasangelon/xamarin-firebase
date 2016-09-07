@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="firebase_test.FirebaseChat">
+	<ContentPage.Content>
+		<StackLayout>
+			<ListView x:Name="messagesView" VerticalOptions="FillAndExpand"></ListView>
+
+			<StackLayout Orientation="Vertical" VerticalOptions="End">
+				<Entry x:Name="content" Placeholder="Enter your message here" Keyboard="Chat" />
+				<Button Text="Send" WidthRequest="80" Clicked="SendMessage" />
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

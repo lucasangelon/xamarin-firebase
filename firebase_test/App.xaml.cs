@@ -8,7 +8,7 @@ namespace firebase_test
 		{
 			InitializeComponent();
 
-			MainPage = new firebase_testPage();
+			MainPage = new FirebaseChat();
 		}
 
 		protected override void OnStart()
